@@ -1,0 +1,78 @@
+// Button
+.button {
+  width: 196px;
+  height: 56px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24.27px;
+  border: none;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  margin-left: 50px;
+  &--ds1 {
+    background-image: url("../image/butt_1.png");
+    color: $white;
+    @media all and (max-width: 1200px) {
+      margin: 53px 35%;
+
+    }
+
+
+  }
+  &--ds2 {
+    background-image: url("../image/butt_2.png");
+    @media all and (max-width: 1200px) {
+       margin: 53px 35%;
+
+    }
+  }
+  &--ds3 {
+    background-image: url("../image/butt_3.png");
+    @media all and (max-width: 1200px) {
+      margin: 53px 35%;
+
+    }
+  }
+  &--concert-tour {
+    background-color: transparent;
+    border: 1px solid $black;
+    float: left;
+    clear: both;
+
+  }
+  &--contact {
+    width: 53px;
+    background: none;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.27px;
+    text-transform: uppercase;
+    background: transparent;
+
+  }
+}
+
+.event {
+  @include make-md-column(8);
+  @include make-lg-column(6);
+  clear: left;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 14px;
+  color: $black;
+  text-transform: uppercase;
+  text-align: left;
+
+  &--cont{
+    width: 50%;
+  }
+  &--wide {
+    @include make-lg-column(12);
+  }
+
+  &--no-padding {
+    padding: 0;
+  }
+}

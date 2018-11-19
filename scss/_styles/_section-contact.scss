@@ -1,0 +1,81 @@
+.contact {
+  @include text();
+  @include  title();
+  &__title{
+    padding-top: 151px;
+    text-align: left;
+  }
+  &__text{
+    text-align: left;
+    margin-left: 0;
+    padding-bottom: 36px;
+  }
+  padding-bottom: 360px;
+  background: url(../image/tree.png) center no-repeat;
+  &__wrapper{
+    @include make-sm-column(12);
+    @include make-md-column-offset(6);
+    @include make-md-column(6);
+    @include make-lg-column-offset(6);
+    @include make-lg-column(6);
+    text-align: left;
+
+  }
+
+  .form {
+    background: none;
+    float: left;
+
+
+    &__input {
+      border: none;
+      border-bottom: 1px solid $black;
+      width: 382px;
+      margin-top: 74px;
+      margin-bottom: 5px;
+
+    }
+  }
+  &__nav {
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 180px;
+      position: relative;
+      &:before{
+        content: '';
+        border-left: 1px solid $black ;
+        height: 191px;
+        width: 1px;
+        position: absolute;
+        left: 129px;
+        top: 0;
+
+      }
+
+
+    }
+    &-item {
+      margin-left: 156px;
+    }
+    &-link{
+      display: block;
+      width: 30px;
+      height: 30px;
+      text-decoration: none;
+
+      margin-bottom: 50px;
+
+    }
+  }
+  &__link-fb{
+    background:url(../image/social-sprite.png) no-repeat 30% 17%;
+  }
+  &__link-inst {
+    background: url(../image/social-sprite.png) no-repeat 70% 35%;
+  }
+  &__link-twit {
+    background:url(../image/social-sprite.png) no-repeat 85% 85%;
+  }
+}

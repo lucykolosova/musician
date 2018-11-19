@@ -1,0 +1,83 @@
+.wrapper-events {
+  @include make-md-column-offset(4);
+  @include make-md-column(8);
+  @include make-lg-column-offset(6);
+  @include make-lg-column(6);
+
+
+}
+
+.upcoming-events {
+  &__title{
+    margin-bottom: 118px;
+  }
+  @include title();
+  @include text();
+  background: url(../image/most.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  &__smokemt {
+    &-text {
+      color: $rollingStone;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.25px;
+      text-align: justify;
+
+      &:after {
+        content: '';
+        display: block;
+        border-left: 1px solid $black;
+        height: 51px;
+        margin-bottom: 10px;
+        margin-left: 35px;
+
+      }
+    }
+    &-date--end {
+      color: $black;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24.27px;
+      text-transform: uppercase;
+      padding-bottom: 230px;
+    }
+    &-date {
+      color: $black;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24.27px;
+      text-transform: uppercase;
+
+      &::after {
+        content: '';
+        display: block;
+        border-left: 1px solid $black;
+        height: 165px;
+        margin-bottom: 10px;
+        margin-top: 23px;
+        margin-left: 35px;
+
+      }
+    }
+
+    &-title {
+      color: $black;
+      font-family: "Open Sans";
+      font-size: 23px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.41px;
+
+    }
+    &-hr {
+      width: 11.5%;
+
+    }
+  }
+}

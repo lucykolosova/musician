@@ -1,0 +1,109 @@
+
+
+.history {
+  @include title();
+  @include text();
+  background: url(../image/man.png) center bottom no-repeat;
+  width: 100%;
+  text-align: center;
+  &__title{
+    padding-top: 151px;
+  }
+  &__text{
+    margin-bottom: 200px;
+    padding-bottom: 0;
+  }
+  &__text-bottom {
+    padding-bottom: 650px;
+    display: block;
+    width: 15%;
+    text-align: center;
+    margin: 0 auto;
+
+  }
+}
+
+.wrapper-date {
+  display: flex;
+  justify-content: space-around;
+  clear: both;
+
+}
+
+.date {
+  color: $black;
+  opacity: 0.28;
+  font-family: Dosis;
+  font-size: 35px;
+  line-height: 59px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  padding-bottom: 90px;
+  &--apr {
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: 1px solid $black;
+      opacity: 0.28;
+      position: absolute;
+      top: -50%;
+      left: 135%;
+    }
+  }
+  &--jul {
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: 1px solid $black;
+      opacity: 0.28;
+      position: relative;
+      top: -50%;
+      left: 115%;
+    }
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    border-bottom: 1px solid $black;
+    opacity: 0.28;
+    position: relative;
+    top: 50%;
+    left: -115%;
+  }
+}
+
+.may {
+  font-family: Dosis;
+  font-size: 35px;
+  line-height: 59px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  color: $corduroy;
+  &::after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: 1px solid $corduroy;
+    border-radius: 20px;
+    background: $corduroy;
+    position: absolute;
+    top: 18%;
+    left: -15%;
+  }
+  &::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: 1px solid $corduroy;
+    border-radius: 20px;
+    background: $corduroy;
+    position: absolute;
+    top: 18%;
+    left: 105%;
+  }
+}

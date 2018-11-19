@@ -1,0 +1,61 @@
+.concert-tour {
+  text-align: center;
+  background-image: url("../image/wall.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding-bottom: 266px;
+  @include text();
+  @include title("../image/wall.png");
+  @media all and (max-width: 1200px) {
+    padding-top: 166px;
+    padding-bottom: 300px;
+  }
+  &__title{
+    padding-top: 165px;
+
+  }
+  &__text {
+    padding-bottom: 310px;
+    @media all and (max-width: 1200px){
+      padding-bottom: 267px;
+    }
+
+  }
+
+
+  &__amblum-title{
+    @include make-xs-column(6);
+    @include make-md-column(6);
+    @include make-lg-column(6);
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 24px;
+    letter-spacing: 0.41px;
+    color: $black;
+    text-align: left;
+    float: left;
+    clear: left;
+    padding-top: 84px;
+
+
+  }
+  &__amblum-description{
+    @include make-xs-column(8);
+    @include make-md-column(8);
+    @include make-lg-column(7);
+    float: left;
+    clear: left;
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: $rollingStone;
+    padding-top: 23px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    text-align: justify;
+
+
+  }
+
+}

@@ -1,0 +1,116 @@
+.letter-composition {
+  padding-bottom: 122px;
+  @include text();
+  @include title();
+  &__title{
+    padding-top: 162px;
+  }
+
+  &__video-row {
+    clear: both;
+    background-color: $blackHaze;
+    margin-bottom: 54px;
+    float: left;
+  }
+
+  &__video-description {
+    @include make-md-column(6);
+
+    &--right {
+      float: right;
+    }
+
+  }
+
+  &__video {
+    @include make-md-column(6);
+    @media all and (max-width: 1200px) {
+      margin-bottom: 50px;
+
+    }
+
+  }
+
+  &__event {
+    padding-left: 0;
+
+    padding-bottom: 48px;
+  }
+
+  &__video-frame {
+    width: 100%;
+  }
+
+  &__video-title {
+    font-size: 23px;
+    color: $black;
+    font-weight: bold;
+    line-height: 24px;
+    font-family: "Open Sans";
+    margin-top: 20px;
+
+  }
+
+  &__video-text {
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: $rollingStone;
+    padding-bottom: 60px;
+    line-height: 24px;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  &__box {
+    @include make-md-column(6);
+    @include make-lg-column(4);
+
+    @include box(6);
+  }
+  &__box-track{
+    height: 422px;
+    margin-top: 28px;
+    padding-right: 24px;
+
+  }
+  &__box-title {
+    float: left;
+    clear: left;
+    display: block;
+    font-size: 23px;
+    color: $black;
+    font-weight: bold;
+    line-height: 24px;
+    font-family: "Open Sans";
+    padding-top: 48px;
+    padding-bottom: 35px;
+    padding-left: 32px;
+  }
+  &__box-description {
+
+    overflow: hidden;
+    height: 20px;
+    white-space: pre;
+    text-overflow: ellipsis;
+
+    clear: left;
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: $rollingStone;
+    text-align: justify;
+    padding-left: 34px;
+
+
+  }
+  &__event{
+   padding-top: 35px;
+    padding-left: 34px;
+  }
+  &__event-title{
+    color: $white;
+
+  }
+}
+
+
+
+

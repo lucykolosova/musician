@@ -1,0 +1,52 @@
+.header {
+  background-color: $navBackground;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  &__link {
+    color: $navLinkColor;
+  }
+
+}
+
+.main-nav {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    float: left;
+  }
+  &__link {
+    display: block;
+    padding: $vPadding $hPadding;
+    text-decoration: none;
+    font-family: "Dosis";
+    font-size: 17px;
+    text-transform: uppercase;
+    color: $navLinkColor;
+    position: relative;
+    &::before {
+      display: block;
+      position: absolute;
+      pointer-events: none;
+      bottom: 9px;
+      left: $hPadding;
+      right: $hPadding;
+      content: '';
+      transition: 0.2s;
+      border-bottom: 2px solid $navLinkHoverColor;
+      transform: scaleX(0);
+    }
+    &:hover::before {
+      transform: scaleX(1);
+    }
+
+  }
+
+}

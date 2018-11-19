@@ -1,0 +1,17 @@
+.banner {
+  height: 100vh;
+  background: url('../image/img_1.png') no-repeat center center;
+  text-align: center;
+  background-size: contain;
+  @include make-md-column(12);
+  @include make-lg-column(12);
+
+
+  &__sticker {
+    display: inline-block;
+    width: 426px;
+    height: 394px;
+    position: relative;
+    top: 219px;
+  }
+}
